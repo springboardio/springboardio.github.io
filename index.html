@@ -1,74 +1,296 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Springboardio.github.io : Public Website" />
+  <!-- Meta tags & title /-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Content Personalization for your Website - Springboard</title>
+  <meta name="description" content="Everyone is different, so should their experience be of your website. CMOs agree that content personalization brings a 42% increase in engagement.">
+  <meta name="keywords" content="">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
 
-    <title>Springboardio.github.io</title>
-  </head>
+  <!-- Facebook Metadata /-->
+  <meta property="fb:page_id" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="Everyone is different, so should their experience be of your website. CMOs agree that content personalization brings a 42% increase in engagement.">
+  <meta property="og:title" content="Content Personalization for your Website - Springboard">
 
-  <body>
+  <!-- Google+ Metadata /-->
+  <meta itemprop="name" content="Content Personalization for your Website - Springboard">
+  <meta itemprop="description" content="Everyone is different, so should their experience be of your website. CMOs agree that content personalization brings a 42% increase in engagement.">
+  <meta itemprop="image" content="">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/springboardio">View on GitHub</a>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-          <h1 id="project_title">Springboardio.github.io</h1>
-          <h2 id="project_tagline">Public Website</h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+  <!-- Stylesheets /-->
+  <link rel="stylesheet" href="./assets/gumby.css">
+  <link rel="stylesheet" href="./assets/style.css">
+  
+  <style>
+  	h1 { font-size: 3.50em; line-height: 1.1em; }
+  	h3 { font-size: 1.7em; padding-bottom: 10px; }
+  	.info { color: #333; font-size: 1.4em; line-height: 30px; font-family: 'latolight', sans-serif; }
+	#home-tour { padding-top: 20px; padding-bottom: 40px; padding-left: 0px; padding-right: 0px; }
+	.tour-step { position: relative; float: left !important; }
+	.tour-step-icon {
+		position: absolute;
+		width: 56px;
+		height: 56px;
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+		line-height: 56px;
+		background: #088FD4 !important;
+		color: #fff !important;
+		border-radius: 72px;
+	}
+	.tour-step-desc { 
+		margin-left: 80px; 
+		text-align: left;
+		float: left; 
+	} 
+	.tour-step-desc p { font-size: 13px; line-height: 22px; }
+	.cbp-so-side-img { text-align: center; }
+	.cbp-so-side-img img.feature-icon { max-height: 200px; }
+  </style>
     
+  <script src="./assets/modernizr-2.5.3.min.js"></script>
 
-  </body>
+</head>
+
+
+<body>
+
+<!-- HEADER ############################################### -->
+
+<section id="header" style="background-color: #0070aa; background-image: url(assets/home-bg.jpg); background-position: center top; background-repeat: no-repeat; height: 550px; min-height: 550px;">
+    <div class="row">
+      <div class="twelve columns centered">
+      	<!-- Logo --> 
+      	<h1 class="fade1 logo" style="display: block;"><a href="#"><img src="assets/logo-springboard.png" alt="Logo"></a></h1>
+      	<!-- Title -->      
+        <h2 class="fade2" style="display: block;">Deliver better content on your website.</h2> 
+        <!-- Button--> 
+        <a class="button fade3" href="#footer" style="display: inline; background-color: darkgoldenrod;">BE NOTIFIED WHEN WE LAUNCH</a>
+      </div>     
+    </div>
+</section>
+
+<!-- END HEADER ############################################### -->
+
+<div id="container" class="container">
+
+<div class="intro-desc" style="padding-bottom: 0px; padding-top: 0px;">
+	<img src="assets/intro1.png" />
+	<br/><br/><br/>
+	<span class="info"><b>Everyone is different, so should their experience be of your website. </b><br/>CMOs agree that content <span data-localize="personalization">personalization</span> brings a 42% increase in engagement.</span>
+	<br/><br/>
+	
+	<a href="#" class="btn btn-default" style="margin-bottom: 50px;  display: none;">Our top <span data-localize="personalization">personalization</span> tricks</a>
+	<a href="tour.html" class="btn btn-default" style="margin-bottom: 50px;">Explore our full tour</a>
+</div>
+
+
+<div id="cbp-so-scroller" class="cbp-so-scroller" style="text-align: center;"> <!-- HERE IS THE DIV FOR SCROLLING EFFECT -->
+
+<div class="intro-desc" style="padding-top: 20px;">
+	<h1><span data-localize="Personalization">Personalization</span> built for everyone</h1>
+	<span class="info">Springboard is a content <span data-localize="personalization">personalization</span> platform that just works. No extra software required.</span>	
+</div>
+
+
+<!-- FIRST SECTION ############################################### -->
+
+<section class="cbp-so-section cbp-so-init">
+	<div class="row">		
+		<div class="seven columns cbp-so-side cbp-so-side-left">		
+			<!-- Title --> 		
+			<h3>Works with your CMS</h3>			
+			<!-- Content --> 			
+			<p>Just a snippet of code in your page and you're away. Update the content and <span data-localize="personalization">personalization</span> rules yourself using our easy to use web based engagement designer. Skip IT, and get your content in fast.</p>
+		</div>
+	
+		<!-- Image from right --> 	
+		<div class="five columns cbp-so-side-img cbp-so-side-right">		
+			<img class="feature-icon" src="./assets/service2.png" alt="EXEMPLE">		
+		</div>
+	</div>
+</section>
+
+<!-- END FIRST SECTION ############################################### -->
+
+<!-- SECOND SECTION ############################################### -->
+
+<section class="cbp-so-section cbp-so-init">
+	<div class="row">	
+		<div class="seven columns cbp-so-side cbp-so-side-right" style="float:right;">		
+			<!-- Title --> 		
+			<h3>Deliver across all your sites</h3>			
+			<!-- Content --> 			
+			<p>Create as many <span data-localize="personalized">personalized</span> content blocks as you like and then through simple routing rules define which pages and sites each <span data-localize="personalized">personalized</span> content block should be displayed. Managed all from one place.</p>
+		</div>		
+		
+		<!-- Image from left --> 		
+		<div class="five columns cbp-so-side-img cbp-so-side-left">			
+			<img class="feature-icon" src="./assets/sites.png" alt="EXEMPLE">					
+		</div>		
+	</div>
+</section>
+
+<!-- END SECOND SECTION ############################################### -->
+
+<!-- THIRD SECTION ############################################### -->
+
+<section class="cbp-so-section cbp-so-init">
+	<div class="row">		
+		<div class="seven columns cbp-so-side cbp-so-side-left">		
+			<!-- Title --> 		
+			<h3>Start for free, pay when you grow</h3>			
+			<!-- Content --> 			
+			<p>Our pricing will allow you to get Springboard running on light traffic sites for free, and then you simply pay for the pageviews which have our javascript code on them. On top of that you'll get unlimited content blocks across unlimited websites.</p>		
+		</div>
+	
+		<!-- Image from right --> 		
+		<div class="five columns cbp-so-side-img cbp-so-side-right">		
+			<img class="feature-icon" src="./assets/graph.png" alt="EXEMPLE">		
+		</div>
+	</div>
+</section>
+
+<a href="faq.html" class="btn btn-default" style="margin-bottom: 50px;">Read our FAQs for more</a>
+
+<!-- END THIRD SECTION ############################################### -->
+
+<!-- START HOW IT WORKS SECTION ###################################### -->
+
+<div id="home-tour" class="row intro-desc">
+	<h1>How it works</h1>
+	<span class="info">User Context + Content Variations = <span data-localize="Personalized">Personalized</span> Content</span>	
+	<br/><br/>
+	<img src="./assets/Overview.png" style="padding-left: 5%; padding-right: 5%;" />
+</div>
+
+<div class="row">
+  <div class="four columns tour-step">
+	<div class="tour-step-icon">1</div>
+	<div class="tour-step-desc">
+		<h4>Just add our tracking code</h4>
+		<p>
+			Drop our JavaScript code into your page, and through that we'll start generating insights into who is accessing your content, their interactions and behaviours, as well as delivering your <span data-localize="personalized">personalized</span> content directly into your pages.
+		</p>
+	</div>
+  </div>
+  <div class="four columns tour-step">
+	<div class="tour-step-icon">2</div>
+	<div class="tour-step-desc">
+		<h4>Profile your audience</h4>
+		<p>
+			Discover who is accessing your content and then create <span data-localize="personalization">personalization</span> rules to specifically to target those users based on their environment, interests and site behaviours.
+		</p>
+	</div>
+  </div>
+  <div class="four columns tour-step">
+	<div class="tour-step-icon">3</div>
+	<div class="tour-step-desc">
+		<h4>Build & deliver <span data-localize="personalization">personalization</span></h4>
+		<p>
+			<span data-localize="Personalize">Personalize</span> your campaign pages, call-to-actions, advertising, local content and more by designing <span data-localize="personalized">personalized</span> content blocks which target users based on their environment, behaviours and interests, in realtime, delivered across all your sites.
+		</p>
+	</div>
+  </div>
+</div>
+
+<a href="tour.html" class="btn btn-default" style="margin-top: 50px; margin-bottom: 50px;">Explore our full tour</a>
+
+<!-- END HOW IT WORKS SECTION ######################################## -->
+
+</div> <!-- end of div scrolling effect -->
+
+<!-- SIGN UP SECTION ############################################### -->
+
+<section id="signup">
+	<div class="row">	
+		<!-- Title --> 		
+		<div class="eight columns centered">		
+			<h2>We're almost ready, interested?</h2>			
+			<!-- Begin the Form --> 			
+			<form id="mc-form" action="http://springboard.us3.list-manage.com/subscribe/post" method="post">
+			<!-- Input of E-Mail --> 
+			<div class="eight columns">		
+				<input id="mc-email" name="email" class="email" type="email" placeholder="YOUR E-MAIL PLEASE">			
+			</div>			
+			<!-- Send Button -->			
+			<div class="four columns">			
+				 <button name="send" type="submit" class="submit">SEND</button>			
+		    </div>		
+		    
+			<input type="hidden" name="u" value="15f70d0f593034139ae93dc9c">
+			<input type="hidden" name="id" value="f069216284">		        
+		    <!-- End of the Form --> 			 
+			</form> 
+		</div>
+
+		<!-- Text Promise we do not spam -->
+		<div class="twelve columns centered">		
+		<p class="spam">Don't worry, we hate spam too.</p>		
+		</div>
+	</div>
+</section>
+
+<!-- END SIGN UP SECTION ############################################### -->
+
+<!-- FOOTER SECTION ############################################### -->
+
+<section id="footer">
+	<div class="row">
+		<!-- Text from left -->
+		<div class="seven columns pull_left">
+		    <p>Springboard - Content <span data-localize="personalization">personalization</span> for your website. © Springboard.io 2014</p>		
+		</div>
+
+		<div class="five columns text-right">
+			<a href="index.html">Home</a> |
+			<a href="tour.html">How it works</a> | 
+			<a href="faq.html">FAQ</a> | 
+			<a href="#">Twitter updates</a>   	
+		</div>
+	</div>
+</section>
+
+<!-- END FOOTER SECTION ############################################### -->
+
+</div> <!-- end of container -->
+
+  <script src="./assets/jquery.min.js"></script>
+  <script src="./assets/jquery.localize.js" type="text/javascript"></script>
+  <script src="./assets/jquery.ajaxchimp.js" type="text/javascript"></script>
+  <script src="./assets/main.js" type="text/javascript"></script>
+  <script src="./assets/plugins.js" type="text/javascript"></script>
+  <script src="./assets/cbpScroller.js" type="text/javascript"></script>
+  <script src="./assets/classie.js" type="text/javascript"></script>
+  <script src="./assets/jquery.scrollto.js" type="text/javascript"></script>
+  
+  <script>
+  	$( document ).ready(function() { // Document ready
+		$('#header .picture').hide();
+		$('.fade1').hide().delay(300).fadeIn(1500);		
+		$('.fade2').hide().delay(600).fadeIn(1500);		
+		$('.fade3').hide().delay(900).fadeIn(1500);		
+		$('#header .picture').delay(800).show('fast').animate({'top': 35}, 1500, 'easeOutBack');			 
+		$('#header .picture').css('top', function(){ return $(this).height() });  
+	});
+  </script>
+
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <!--<script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>  -->
+
+</body>
 </html>

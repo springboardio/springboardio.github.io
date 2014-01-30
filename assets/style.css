@@ -1,0 +1,734 @@
+/*
+
+	01. Key Frames & Font Face
+	02. Generals Settings
+	03. Header Section Settings
+	04. Container Section Settings
+	05. Sign Up Section Settings
+	06. Footer Section Settings
+	07. Media Queries for Mobile Settings
+	08. Media Queries for iPad/Tablet Settings
+			
+*/
+
+
+
+
+
+/* 01. FONT FACE ================================================== */
+
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('lato-reg-webfont.eot');
+    src: url('lato-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-reg-webfont.woff') format('woff'),
+         url('lato-reg-webfont.ttf') format('truetype'),
+         url('lato-reg-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('lato-lig-webfont.eot');
+    src: url('lato-lig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-lig-webfont.woff') format('woff'),
+         url('lato-lig-webfont.ttf') format('truetype'),
+         url('lato-lig-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latobold';
+    src: url('lato-bol-webfont.eot');
+    src: url('lato-bol-webfont.eot?#iefix') format('embedded-opentype'),
+         url('lato-bol-webfont.woff') format('woff'),
+         url('lato-bol-webfont.ttf') format('truetype'),
+         url('lato-bol-webfont.svg#latobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+	
+/* 02. GENERALS SETTINGS ================================================== */
+
+
+
+/* Selected text Color */
+
+::-moz-selection{background:#6ec5e2;color:white}
+::selection{background:#6ec5e2;color:white}
+
+
+body, html { 
+	width:100%;
+	height: 100%;
+	min-height: 100%;
+	background-color:#FFF;
+	position:absolute;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	font-family: 'latoregular', sans-serif; }
+
+.centered {text-align: center;}
+
+.clear {padding: 10px 0;}
+
+b { font-family: 'latoregular', sans-serif;}
+
+h1 {
+  	font-family: 'latolight', sans-serif;
+  	margin: 0.75em 0.75em 0.25em;
+  	font-size:2.70em;
+}
+
+h2 {
+	font-size:2.70em;
+	line-height: 1.3em;
+  	font-family: 'latolight', sans-serif;
+  	margin-top: 0.33em;}
+  
+h3 {    
+	color: #647385;
+	font:2.2em 'latolight', sans-serif;
+	padding-bottom: 25px;
+	padding-top: 0px;}
+
+
+
+/* Link */
+
+a {
+  	color: #647385;
+  	text-decoration: none;}
+
+a:hover {
+	color: #34495e;}  
+	
+/* Paragrah */
+
+p {
+	color: #9DA5AF;}
+
+p a {
+	color:#647385;
+	border-bottom: 1px dotted #888;
+	-webkit-transition: all 0.5s ease-out;
+  	-moz-transition: all 0.5s ease-out;
+  	-o-transition: all 0.5s ease-out;
+  	transition: all 0.5s ease-out;}
+
+p a:hover {
+	color:#34495e;}
+
+/* Button */
+
+.button {
+    border: 1px solid rgba(255, 255, 255,0.2);
+    color: #FFFFFF;
+    font-family: 'latolight', sans-serif;
+    text-transform: uppercase;
+    padding:15px 20px;
+    font-size: 16px;
+    min-width: 150px;
+    line-height: 90px;
+    text-align: center;
+	-webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.15);
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.15);    
+}
+
+.button:hover {
+	background: #1abc9c;
+	border: #1abc9c;
+	color:#FFF;
+	 -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;}
+
+/* FOR FADING : DON'T REMOVE IT */
+
+/*
+.fade1,.fade2,.fade3{  
+    display:none;}
+*/
+
+#loading {
+    background: #363f48;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+#loading img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10%;
+}
+
+.pull-left { float: left; }
+.pull-right { float: right; }
+.btn {
+	display: inline-block;
+	padding: 12px 18px; 
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.428571429;
+	text-align: center;
+	white-space: nowrap;
+	text-transform: uppercase; 
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	-webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.15);
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.15);	
+}
+.btn:hover, .btn:focus {
+	color: #333;
+	text-decoration: none;
+}
+.btn-default {
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+	color: #333;
+	background-color: #ebebeb;
+	border-color: #adadad;
+}	
+
+	
+/* 03. HEADER SECTION ================================================== */
+
+
+
+/* Header Generals  */
+
+#header {
+	width:100%;
+	height:100%;
+	min-height: 650px;
+	color:#FFF;
+	/* background-color:#363f48; */
+	background-color: #4c4356;
+	background-size:auto;}
+
+
+#header .logo { 
+	margin-top: 8%; }
+
+#header h2 {
+	padding:30px 0;	}
+	
+/* Picture on Header Don't touch  */
+
+#header .picture {
+	position: relative;
+	z-index: 1;}
+
+
+	
+/* 04. CONTAINER SECTION ================================================== */
+
+
+
+/* Container  */
+
+.container {	
+	z-index: 999; /* IMPORTANT */
+	position: relative;
+	background: #FFF;}
+
+
+.cbp-so-scroller {
+	overflow: hidden;}
+
+.intro-desc { text-align: center; padding-top: 40px; padding-bottom: 30px; padding-left: 6%; padding-right: 6%; }
+.intro-desc p { font-family: 'latolight', sans-serif; font-size: 2.2em; line-height: 44px; }
+
+/* Clear floats of children */
+.cbp-so-section:before,
+.cbp-so-section:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-so-section:after {
+	clear: both;}
+
+.cbp-so-section:first-child {
+	margin-top:25px;}
+
+/* Sides */
+.cbp-so-side {
+	width: 100%;
+	margin: 0;
+	padding: 3em 2%;
+	overflow: hidden;
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	-moz-transition: -moz-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;}
+
+.cbp-so-side-img {
+	width: 100%;
+	margin: 0;
+	padding: 2em 2%;
+	overflow: hidden;
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	-moz-transition: -moz-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;}
+
+
+/* Clear floats of children */
+.cbp-so-side:before,
+.cbp-so-side:after {
+	content: " ";
+	display: table;}
+
+.cbp-so-side:after {
+	clear: both;}
+
+.cbp-so-side-right {
+	text-align: left;}
+
+.cbp-so-side-left {
+	text-align: left;}
+
+.cbp-so-side-right img {
+	float: left;}
+
+.cbp-so-side-left img {
+	float: right;}
+
+/* Initial state (hidden or anything else) */
+.cbp-so-init .cbp-so-side {
+	opacity: 0;}
+
+.cbp-so-init .cbp-so-side-left {
+	-webkit-transform: translateX(-80px);
+	-moz-transform: translateX(-80px);
+	transform: translateX(-80px);}
+
+.cbp-so-init .cbp-so-side-right {
+	-webkit-transform: translateX(80px);
+	-moz-transform: translateX(80px);
+	transform: translateX(80px);}
+
+/* Animated state */
+/* add you final states (transition) or your effects (animations) for each side */
+.cbp-so-section.cbp-so-animate .cbp-so-side-left,
+.cbp-so-section.cbp-so-animate .cbp-so-side-right {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+	opacity: 1;}
+
+/* For example, add a delay for the right side:
+.cbp-so-section.cbp-so-animate .cbp-so-side-right {
+	-webkit-transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+*/
+
+
+/* ================== TOUR SECTION ========================= */
+
+	#section-tour {
+	  background-color: #22c5ac;
+	  color: #ffffff;
+	  padding-bottom: 0;
+	  margin-top: 20px;
+	}
+	#section-tour .container { background-color: #22c5ac; }
+	#section-tour h1 { margin-bottom: 40px; margin-top: 60px; }
+	#section-tour .tour-step-icon {
+	  position: relative;
+	  top: 48px;
+	  margin: -48px auto -6px;
+	  width: 96px;
+	  height: 96px;
+	  text-align: center;
+	  font-size: 48px;
+	  font-weight: bold;
+	  line-height: 48px;
+	  padding-top: 12px;
+	  border-radius: 72px;
+	  border: solid 12px #1fb49d;
+	  background: #3a5062;
+	  color: #1fb49d;
+	  z-index: 1;
+	  vertical-align: middle;
+	}
+	#section-tour .tour-step-icon.final {
+	  font-size: 40px;
+	}
+	#section-tour .tour-step-container {
+	  /* position: absolute; */
+	  padding-top: 66px;
+	}
+	#section-tour .tour-step-container .icon {
+	  color: #1fb49d;
+	  font-size: 140px;
+	  text-align: center;
+	  -moz-transition: color 0.3s;
+	  -webkit-transition: color 0.3s;
+	  transition: color 0.3s;
+	  margin-left: 30px;
+	}
+	#section-tour .tour-step-container .icon:hover {
+	  color: #1ca28e;
+	}
+	#section-tour .tour-line-half {
+	  background: #1fb49d;
+	  display: block;
+	  height: 12px;
+	  position: relative;
+	  top: 0;
+	  width: 50%;
+	}
+	#section-tour .tour-line-full {
+	  background: #1fb49d;
+	  display: block;
+	  height: 12px;
+	  position: relative;
+	  top: 0;
+	}
+	#section-tour .tour-line-vert {
+	  background: #1fb49d;
+	  display: block;
+	  width: 12px;
+	  height: 282px;
+	}
+	#section-tour .last-step {
+	  height: 176px;
+	  margin-bottom: 96px;
+	  text-align: center;
+	}
+	#section-tour .last-step h3 {
+		padding-bottom: 0px;
+	}
+	#section-tour .last-step .launch {
+	  padding: 0;
+	  color: #3a5062;
+	  margin: -30px 0 0 0;
+	}
+	#section-tour .media {
+	  margin-top: -48px;
+	  margin-left: 0px;
+	}
+	#section-tour .media:first-child {
+	  margin-top: 0;
+	}
+	#section-tour .media-heading {
+	  margin: 0;
+	  color: #425a6f;
+	}  
+	#section-tour .media-desc {
+		color: #fff;
+		font-family: 'latolight', sans-serif;
+	}	
+	
+	#section-tour .step2a { position: absolute; }
+	#section-tour .step2b { margin-right: 100px; }
+    #section-tour .step2c { text-align: right; }	
+	
+	
+	@media only screen and (max-width: 992px) {
+		.column, .columns, .row .push_eleven:first-child {
+		width: auto !important;
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+		}
+	}
+	
+	@media screen and (max-width: 992px) {
+	  #section-tour {
+		text-align: center;
+	  }
+	  #section-tour .tour-line-half,
+	  #section-tour .tour-line-full {
+		display: none;
+	  }
+	  #section-tour .tour-line-vert,
+	  #section-tour .tour-line-vert.pull-right {
+		float: none !important;
+		margin: 0 auto;
+		height: 96px;
+	  }
+	  #section-tour .tour-step-container {
+		padding-top: 24px;
+	  }
+	  #section-tour .media-body {
+		margin-bottom: 72px;
+	  }
+	  #section-tour .media-body h3 {
+		padding: 12px;
+	  }
+	  #section-tour .last-step {
+		height: 190px;
+	  }
+	  #section-tour .last-step .launch {
+		margin-top: 72px;
+		float: none !important;
+	  }
+	  #section-tour .tour-step-icon.final {
+		width: 120px;
+		height: 120px;
+	  }
+	  #section-tour .tour-step-icon.final span {
+		font-size: 54px;
+		line-height: 72px;
+	  }
+	  
+	  #section-tour .step2a { position: relative; }
+	  #section-tour .step2b { margin-right: auto; }
+      #section-tour .step2c { text-align: center; }
+	}	
+	
+	@media screen and (max-width: 992px) {
+		#section-tour .tour-step-container {
+		  position: relative;
+		  padding-top: 30px;
+		}	
+	}
+
+
+	
+/* 05. SIGN UP SECTION ================================================== */
+
+
+
+/* Sign up General */
+
+#signup {
+	background: #555;
+	color: #FFF;
+	padding: 60px 0 80px 0;
+	font-family: 'latoregular', sans-serif;}
+	
+
+form {overflow: hidden;}
+
+
+/* Signup Title */
+
+#signup h2 {
+	padding:0px 0 50px 0;}
+	
+/* Mail Input Send */
+
+#signup input {
+	font-family: 'latoregular', sans-serif;
+	-moz-transition:all .3s ease-in-out;
+	-ms-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	-webkit-transition:all .3s ease-in-out;
+	border: none;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05) inset;
+	border-radius: none;
+	color: #333;
+	height:55px;
+	resize: vertical;
+	font-size:12px;
+	margin-bottom: 15px;
+	letter-spacing:1px;
+	padding: 9px 10px 8px;
+	transition:all .3s ease-in-out;
+	width:100%;}
+	
+/* Button Send */
+
+#signup .submit{
+	height:55px;
+	width: 170px;
+	font-family: 'latolight', sans-serif;
+	letter-spacing:1px;
+    float: left;
+    display: block;
+	border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color:#FFF;
+    background:none;
+    border: 1px solid #FFF;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;}
+
+/* Button Send Hover */
+
+#signup .submit:hover{
+	color:#e74c3c;
+	background: #FFF;
+	cursor:pointer;}
+
+/* Promise we do not spam */
+
+#signup .spam {
+	padding:21px 0 0 0;
+	font-family: 'latolight', sans-serif;
+	color: #FFF;}
+
+/* Message if it's ok */
+
+#signup .msg-ok {
+	font-family: 'latolight', sans-serif;
+	color: #FFF;}
+
+
+	
+/* 06. FOOTER SECTION ================================================== */
+
+
+
+/* Footer General */
+
+#footer {
+	padding:25px 0;
+	background: #363f48;}
+
+/* Footer Text on Left */
+	
+#footer p {
+	font-size:13px;}
+	
+#footer a { color: #ccc; border-bottom: 1px dotted #888; }	
+#footer a:hover { color: #fff; }	
+
+/* Footer Social Icon on Right Generals */
+	
+#footer .social {
+	padding-top:5px;
+	font-size:42px;}
+
+/* Footer Social Icon  */
+	
+#footer i {
+	padding: 0px 5px;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;}
+
+/* Footer Social Icon on Hover */
+	
+#footer i:hover {
+	color:#FFF;}
+	
+	
+/* 07. PAGE - HOW IT WORKS ================================================================ */
+
+.tour-panel { margin-top: 100px !important; }
+.tour-panel .tour-step-icon { top: -0px !important;  border: solid 12px #fff !important; }
+.tour-panel .tour-step-content { margin-top: 30px; text-align: center; }
+
+.tour-panel .tour-step-gray { background-color: #f5f4f2; }
+.tour-panel .tour-step-gray .tour-step-icon { background: #088FD4 !important; color: #fff !important; }
+.tour-panel .tour-step-gray h4 { color: #088FD4; padding-bottom: 20px; text-transform: uppercase; }
+.tour-panel .tour-step-gray p { color: #333; font-size: 1.4em; line-height: 30px; font-family: 'latolight', sans-serif; padding-bottom: 40px; }
+
+.tour-panel .tour-step-white { background-color: #fff; }
+.tour-panel .tour-step-white .tour-step-icon { background: #088FD4 !important; color: #fff !important; }
+.tour-panel .tour-step-white h4 { color: #088FD4; padding-bottom: 20px; text-transform: uppercase; }
+.tour-panel .tour-step-white p { color: #333; font-size: 1.4em; line-height: 30px; font-family: 'latolight', sans-serif; padding-bottom: 40px; }
+
+.tour-panel .tour-step-blue { background-color: #4c4356; }
+.tour-panel .tour-step-blue .tour-step-icon { background: #4c4356 !important; color: #fff !important; }
+.tour-panel .tour-step-blue h4 { color: #8ACEF1; padding-bottom: 20px; text-transform: uppercase; }
+.tour-panel .tour-step-blue p { color: #fff; font-size: 1.4em; line-height: 30px; font-family: 'latolight', sans-serif; padding-bottom: 40px; }
+
+	
+/* 07. MEDIA QUERIES FOR MOBILE SETTINGS ================================================== */
+
+
+
+/* Styling for mobile devices */
+
+@media screen and (max-width: 768px) {
+
+
+	#header h2 {font-size:1.5em}
+	
+	#header .button {font-size:10px;}
+	
+	.cbp-so-side h3 {font-size:1.5em;}
+	
+	.cbp-so-side {text-align: center; padding: 2% 0;}
+	
+	#signup h2 {font-size:1.5em;}
+	
+	#signup form {overflow: hidden;}
+	
+	#signup input {border-radius: 0px;}
+	
+	#signup .submit {width:100%;}
+	
+	#signup .spam {padding-top:50px;}
+	
+	#footer p {text-align: center; padding:10px 0;}
+	
+	#footer .social {text-align: center;}
+
+}
+
+
+
+
+/* 08. MEDIA QUERIES FOR TABLET SETTINGS ================================================== */
+
+
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1)  {
+	
+	#header h2 {font-size:2em}
+	
+	#header .button {font-size:16px;}
+	
+	.cbp-so-side h3 {font-size:1.5em;}
+	
+	.cbp-so-side-right { text-align: left;}
+
+	.cbp-so-side-left {text-align: left;}
+	
+	#signup h2 {font-size:2em;}
+	
+	#signup form {overflow: hidden;}
+	
+	#signup input {border-radius: 0px;}
+	
+	#signup .submit {width:100%;}
+	
+	#signup .spam {padding-top:50px;}
+	
+	#footer p {text-align: left; padding:10px 0;}
+	
+	#footer .social {text-align: center;}
+		
+}
